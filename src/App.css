@@ -1,0 +1,29 @@
+li,
+ul {
+	list-style: none;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+li:after {
+	content: ", ";
+}
+li:last-child::after {
+	content: " ";
+}
+body {
+	background-color: #e9ecf4;
+}
+.movies {
+	margin: 0 50px 0 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.loader {
+	text-align: center;
+	position: relative;
+	top: 50vh;
+	font-size: 1.5em;
+	font-weight: 600;
+}

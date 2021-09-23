@@ -1,7 +1,7 @@
 .movie {
 	width: 40%;
 	display: flex;
-	margin: 50px 0 50px 0;
+	margin: 50px 0 20px 0;
 	padding: 20px;
 	background-color: #ffffff;
 	border-radius: 5px;
@@ -19,17 +19,32 @@
 	flex-direction: column;
 	padding-left: 30px;
 	color: #aeafb8;
-	font-size: 1.1em;
+	font-size: 0.8em;
 }
-.movie .movie__title {
-	font-size: 1.2em;
+.movie .movie__data .movie__title {
+	font-size: 1em;
 	font-weight: bold;
 	color: rgb(105, 105, 105);
 	padding-bottom: 15px;
 }
-.movie__year {
+.movie .movie__data .movie__year {
 	padding-bottom: 5px;
 }
-.genres__genre {
+.movie .movie__data .genres .genres__genre {
 	padding-right: 4px;
+}
+
+@media screen and (max-width: 900px) {
+	.movie {
+		width: 80%;
+	}
+}
+@media screen and (max-width: 500px) {
+	.movie {
+		width: 80%;
+		flex-direction: column;
+	}
+	.movie .movie__data {
+		padding-left: 0;
+	}
 }

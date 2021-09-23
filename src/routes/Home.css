@@ -14,16 +14,16 @@ li:last-child::after {
 body {
 	background-color: #e9ecf4;
 }
-.movies {
+.container .movies {
 	margin: 0 50px 0 50px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
-.loader {
+.container .loader {
 	text-align: center;
 	position: relative;
 	top: 50vh;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	font-weight: 600;
 }

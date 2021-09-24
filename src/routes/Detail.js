@@ -16,24 +16,29 @@ class Detail extends React.Component {
 		if (state) {
 			const { title, year, poster, genres, summary } = state;
 			return (
-				<div className="movie">
-					<img
-						className="movie__poster"
-						src={poster}
-						alt={title}
-						title={title}
-					/>
-					<div className="movie__data">
-						<div className="movie__title">{title}</div>
-						<div className="movie__year">{year}</div>
-						<ul className="genres">
-							{genres.map((genre, index) => (
-								<li className="genres__genre" key={index}>
-									{genre}
-								</li>
-							))}
-						</ul>
-						<p className="movie__summary">{summary}</p>
+				<div
+					className="background"
+					style={{ backgroundImage: "url(" + poster + ")" }}
+				>
+					<div className="detail">
+						<img
+							className="detail__poster"
+							src={poster}
+							alt={title}
+							title={title}
+						/>
+						<div className="detail__data">
+							<div className="detail__title">{title}</div>
+							<div className="detail__year">{year}</div>
+							<ul className="detail__genres">
+								{genres.map((genre, index) => (
+									<li className="genres__genre" key={index}>
+										{genre}
+									</li>
+								))}
+							</ul>
+							<p className="detail__summary">{summary}</p>
+						</div>
 					</div>
 				</div>
 			);

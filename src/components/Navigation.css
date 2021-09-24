@@ -3,13 +3,13 @@ a {
 	color: rgb(105, 105, 105);
 }
 .navigation {
-	background-color: #ffffff;
+	background-color: #ffffffad;
 	width: fit-content;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	position: fixed;
-	border-radius: 10px;
+	border-radius: 3px;
 	z-index: 1;
 	top: 50px;
 	left: 15px;
@@ -20,4 +20,11 @@ a {
 }
 .navigation a {
 	padding: 5px 0 5px 0;
+}
+@media screen and (max-width: 414px) {
+	.navigation {
+		padding: 10px 15px;
+		font-size: 0.8em;
+		top: 20px;
+	}
 }

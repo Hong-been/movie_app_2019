@@ -6,10 +6,10 @@ ul {
 	margin: 0;
 }
 li:after {
-	content: ", ";
+	content: "\00B7";
 }
 li:last-child::after {
-	content: " ";
+	content: "";
 }
 body {
 	background-color: #e9ecf4;
